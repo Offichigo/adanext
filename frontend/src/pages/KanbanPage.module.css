@@ -1,0 +1,105 @@
+.breadcrumb {
+  font-size: 0.85rem;
+  color: var(--color-gris-txt);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumbLink {
+  color: var(--color-violet);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.breadcrumbLink:hover {
+  color: var(--color-violet-dark);
+}
+
+.breadcrumbSep {
+  color: var(--color-card-brd);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--color-rouge);
+}
+
+.projectLabel {
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-rouge);
+  margin-bottom: 4px;
+}
+
+.projectName {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-noir);
+  margin-bottom: 4px;
+}
+
+.projectDesc {
+  font-size: 0.88rem;
+  color: var(--color-gris-txt);
+}
+
+.addButton {
+  background: var(--color-rouge);
+  color: var(--color-blanc);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background-color 0.15s;
+}
+
+.addButton:hover {
+  background: var(--color-rouge-dark);
+}
+
+.addButton:focus-visible {
+  outline: 2px solid var(--color-violet);
+  outline-offset: 2px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 700px) {
+  .board {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stateMsg {
+  color: var(--color-gris-txt);
+  font-size: 0.9rem;
+}
+
+.errorMsg {
+  background: var(--color-error-bg);
+  border-left: 4px solid var(--color-rouge-dark);
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  color: var(--color-rouge-dark);
+}

@@ -1,0 +1,46 @@
+.navbar {
+  background: var(--color-noir);
+  padding: 0 40px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brandLink {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-blanc);
+  text-decoration: none;
+}
+
+.brandAccent {
+  color: var(--color-rouge);
+}
+
+.logoutButton {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.logoutButton:hover {
+  border-color: var(--color-rouge);
+  color: var(--color-blanc);
+}
+
+.logoutButton:focus-visible {
+  outline: 2px solid var(--color-violet);
+  outline-offset: 2px;
+}

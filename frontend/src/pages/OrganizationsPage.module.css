@@ -1,0 +1,120 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid var(--color-rouge);
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-noir);
+  margin-bottom: 4px;
+}
+
+.pageDesc {
+  font-size: 0.9rem;
+  color: var(--color-gris-txt);
+}
+
+.createButton {
+  background: var(--color-rouge);
+  color: var(--color-blanc);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background-color 0.15s;
+}
+
+.createButton:hover {
+  background: var(--color-rouge-dark);
+}
+
+.createButton:focus-visible {
+  outline: 2px solid var(--color-violet);
+  outline-offset: 2px;
+}
+
+.grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  display: block;
+  background: var(--color-blanc);
+  border: 1.5px solid var(--color-card-brd);
+  border-left: 4px solid var(--color-rouge);
+  padding: 20px 22px;
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.card:hover {
+  border-left-color: var(--color-rouge-dark);
+  box-shadow: 0 2px 8px rgba(201, 69, 48, 0.1);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--color-violet);
+  outline-offset: 2px;
+}
+
+.cardLabel {
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-rouge);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.cardName {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--color-noir);
+  margin-bottom: 8px;
+}
+
+.cardDesc {
+  font-size: 0.85rem;
+  color: var(--color-gris-txt);
+  line-height: 1.5;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 48px 24px;
+  text-align: center;
+  color: var(--color-gris-txt);
+}
+
+.stateMsg {
+  color: var(--color-gris-txt);
+  font-size: 0.9rem;
+}
+
+.errorMsg {
+  background: var(--color-error-bg);
+  border-left: 4px solid var(--color-rouge-dark);
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  color: var(--color-rouge-dark);
+}

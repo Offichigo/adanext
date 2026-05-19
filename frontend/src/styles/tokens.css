@@ -1,0 +1,21 @@
+:root {
+  --color-bg: #F7EAE4;
+  --color-rouge: #C94530;
+  --color-rouge-dark: #A3371F;
+  --color-violet: #5B4FDC;
+  --color-violet-dark: #4840B8;
+  --color-noir: #1A1A1A;
+  --color-blanc: #FFFFFF;
+  --color-vert: #3D9B6B;
+  --color-tag-bg: #EDE0D9;
+  --color-tag-txt: #5A3A2E;
+  --color-gris-txt: #4A4A4A;
+  --color-card-brd: #E8D0C8;
+  --color-error-bg: #FDF2F1;
+
+  --font-heading: 'Barlow Condensed', sans-serif;
+  --font-body: 'Barlow', sans-serif;
+  --font-code: 'Source Code Pro', monospace;
+
+  --radius-sm: 2px;
+}
