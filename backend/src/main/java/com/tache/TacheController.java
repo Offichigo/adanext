@@ -7,8 +7,14 @@ import java.util.List;
 @RequestMapping("/api/taches")
 public class TacheController {
 
+    private final TacheService tacheService;
+
+    public TacheController(TacheService tacheService) {
+        this.tacheService = tacheService;
+    }
+
     @GetMapping
-    public List<String> listerTaches() {
-        return List.of("Préparer la démo", "Réviser JPA");
+    public List<Tache> listerToutes() {
+        return tacheService.listerToutes();
     }
 }
